@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  --background: #ffffff;
+  --background: #354B33;
   --foreground: #171717;
 }
 
@@ -14,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #354B33;
     --foreground: #ededed;
   }
 }
@@ -24,3 +28,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.custom-bg {
+  background-position: -9px 14px;
+  font-family: "Century Gothic";
+  color: white;
+}
+
