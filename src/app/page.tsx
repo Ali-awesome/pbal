@@ -1,14 +1,8 @@
-export const metadata = {
-  title: "PBAL - An AGRO Based Company",
-  description: "Organic Food & Agriculture Platform",
-};
-import Header from "@/app/Navbar/page";
-import Footer from "@/app/Footer/page";
+import Contact from "@/app/Contact/page";
 
-export default function HomePage() {
+export default function Home() {
   return (
     <main className="overflow-visible">
-      <Header />
       <section
         id="home"
         className="relative pt-32 pb-20 bg-cover bg-center bg-no-repeat h-screen"
@@ -31,7 +25,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <Footer />
+      <Contact />
     </main>
   );
 }
