@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContactSection: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <section id="contact" className="mb-10">
       <div className="overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white m-4">
@@ -117,4 +117,4 @@ const ContactSection: React.FC = () => {
   );
 };
 
-export default ContactSection;
+export default Contact;

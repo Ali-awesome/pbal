@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -6,7 +7,7 @@ const Header: React.FC = () => {
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
 
   return (
-    <header className="shadow-md tracking-wide sticky top-0 z-50 bg-[#334B35]">
+    <header className="shadow-md tracking-wide top-0 z-50 bg-[#334B35] sticky">
       <section className="py-2 bg-[#F7C35F] text-[#334B35] text-right px-10">
         <p className="text-sm">
           <span className="mx-3 font-semibold">Address:</span>Tower 71, House
