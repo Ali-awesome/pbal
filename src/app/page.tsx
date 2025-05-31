@@ -1,4 +1,5 @@
 import Contact from "@/app/Contact/page";
+import Overview from "@/app/Overview/page";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Overview />
       <Contact />
     </main>
   );
