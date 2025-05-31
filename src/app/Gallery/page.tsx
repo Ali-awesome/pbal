@@ -1,5 +1,6 @@
 import React from "react";
 import GalleryNav from "@/app/components/GalleryNav";
+import Project from "@/app/ProjectLocation/page";
 
 interface Photos {
   id: number;
@@ -10,7 +11,7 @@ interface Photos {
   download_url: string;
 }
 
-const Project: React.FC = async () => {
+const Gallery: React.FC = async () => {
   const res = await fetch("https://picsum.photos/v2/list");
   const photos: Photos[] = await res.json();
 
@@ -68,8 +69,9 @@ const Project: React.FC = async () => {
           ))}
         </div>
       </div>
+      <Project />
     </section>
   );
 };
 
-export default Project;
+export default Gallery;

@@ -42,7 +42,7 @@ const Overview = () => {
           <li>Empowering communities through modern aquaculture.</li>
         </ul>
         <Link
-          className="inline-block mt-4 px-6 py-3 bg-[#F7C35F] text-white font-semibold rounded-lg shadow-md hover:bg-[#F7C35F] transition"
+          className="inline-block mt-4 px-6 py-3 bg-[#F7C35F] text-white rounded-lg shadow-md hover:bg-[#F7C35F] transition"
           href="\Gallery"
         >
           Explore More
