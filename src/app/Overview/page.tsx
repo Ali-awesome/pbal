@@ -11,7 +11,7 @@ const Overview = () => {
           alt="Catching Fish"
           width={500}
           height={400}
-          className="aspect-3/2 border-y-20 rounded-2xl border-[#F7C35F]"
+          className="aspect-3/2 border-y-20 rounded-2xl border-gray-900"
         />
 
         {/*
@@ -33,13 +33,13 @@ const Overview = () => {
           restaurant, or distributor, we deliver freshness you can trust —
           directly from sustainable fisheries to your doorstep.
         </p>
-        <ul className="list-disc list-inside text-white space-y-1 font-[Livvic]">
-          <li>Delivering high-quality, farm-raised freshwater fish.</li>
-          <li>Ensuring clean water practices for healthy growth.</li>
-          <li>Supporting eco-friendly and sustainable fish farming.</li>
-          <li>Partnering with local farmers for reliable supply chains.</li>
-          <li>Maintaining freshness from pond to plate.</li>
-          <li>Empowering communities through modern aquaculture.</li>
+        <ul className="list-none text-white space-y-1 font-[Livvic]">
+          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Delivering high-quality, farm-raised freshwater fish.</li>
+          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Ensuring clean water practices for healthy growth.</li>
+          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Supporting eco-friendly and sustainable fish farming.</li>
+          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Partnering with local farmers for reliable supply chains.</li>
+          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Maintaining freshness from pond to plate.</li>
+          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Empowering communities through modern aquaculture.</li>
         </ul>
         <Link
           className="inline-block mt-4 px-6 py-3 bg-[#F7C35F] text-white rounded-lg shadow-md hover:bg-[#F7C35F] transition"

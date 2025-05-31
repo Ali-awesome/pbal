@@ -5,7 +5,6 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 pt-12 pb-6 px-10 tracking-wide">
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Logo */}
           <div className="lg:flex lg:items-center">
             <a href="#">
               <img
@@ -15,8 +14,6 @@ const Footer: React.FC = () => {
               />
             </a>
           </div>
-
-          {/* Social Icons */}
           <div className="lg:flex lg:items-center">
             <ul className="flex space-x-6">
               {[
@@ -48,7 +45,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Useful Links */}
           <div>
             <h4 className="text-am mb-6 text-white">Useful links</h4>
             <ul className="space-y-4 pl-2">
@@ -65,7 +61,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Information Links */}
           <div>
             <h4 className="text-am mb-6 text-white">Information</h4>
             <ul className="space-y-4 pl-2">

@@ -34,16 +34,6 @@ const Header: React.FC = () => {
 
           <nav className="hidden lg:block  text-white font-thin items-center">
             <ul className="flex gap-x-10 items-center text-sm">
-              {/* {["Home", "Blog", "Contact", "Project"].map((item) => (
-                <li key={item}>
-                  <Link
-                    href={item}
-                    className="hover:text-green-300 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-yellow-600 hover:after:w-full after:transition-all after:duration-300"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))} */}
               <li>
                 <Link
                   className="hover:text-green-300 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-yellow-600 hover:after:w-full after:transition-all after:duration-300"
@@ -76,87 +66,21 @@ const Header: React.FC = () => {
                   Contact
                 </Link>
               </li>
-
-              <li
-                className="relative"
-                onMouseEnter={() => setHoveredMenu("About")}
-                onMouseLeave={() => setHoveredMenu(null)}
-              >
-                <button className="hover:text-green-300 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-yellow-600 hover:after:w-full after:transition-all after:duration-300 flex items-center gap-1">
+              <li>
+                <Link
+                  className="hover:text-green-300 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-yellow-600 hover:after:w-full after:transition-all after:duration-300"
+                  href="\Team"
+                >
                   About
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 24 24"
-                    className="fill-current"
-                  >
-                    <path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z" />
-                  </svg>
-                </button>
-
-                <AnimatePresence>
-                  {hoveredMenu === "About" && (
-                    <motion.ul
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      transition={{ duration: 0.2 }}
-                      className="absolute left-0 top-full mt-2 min-w-[200px] shadow-lg bg-[#334B35] rounded-lg py-2 z-50"
-                    >
-                      {["Directors", "Staffs", "Companies"].map((link) => (
-                        <li key={link}>
-                          <a
-                            href="#"
-                            className="block px-4 py-2 text-sm hover:text-green-300 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-yellow-600 hover:after:w-full after:transition-all after:duration-300"
-                          >
-                            {link}
-                          </a>
-                        </li>
-                      ))}
-                    </motion.ul>
-                  )}
-                </AnimatePresence>
+                </Link>
               </li>
-
-              <li
-                className="relative"
-                onMouseEnter={() => setHoveredMenu("Services")}
-                onMouseLeave={() => setHoveredMenu(null)}
-              >
-                <button className="hover:text-green-300 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-yellow-600 hover:after:w-full after:transition-all after:duration-300 flex items-center gap-1">
+              <li>
+                <Link
+                  className="hover:text-green-300 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-yellow-600 hover:after:w-full after:transition-all after:duration-300"
+                  href="\Contact"
+                >
                   Services
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 24 24"
-                    className="fill-current"
-                  >
-                    <path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z" />
-                  </svg>
-                </button>
-
-                <AnimatePresence>
-                  {hoveredMenu === "Services" && (
-                    <motion.ul
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      transition={{ duration: 0.2 }}
-                      className="absolute left-0 top-full mt-2 min-w-[200px] shadow-lg bg-[#334B35] rounded-lg py-2 z-50"
-                    >
-                      {["Fisheries", "Hatcheries"].map((link) => (
-                        <li key={link}>
-                          <a
-                            href="#"
-                            className="block px-4 py-2 text-sm hover:text-green-300 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-yellow-600 hover:after:w-full after:transition-all after:duration-300"
-                          >
-                            {link}
-                          </a>
-                        </li>
-                      ))}
-                    </motion.ul>
-                  )}
-                </AnimatePresence>
+                </Link>
               </li>
             </ul>
           </nav>
