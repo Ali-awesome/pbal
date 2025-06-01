@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const Overview = () => {
   return (
@@ -34,12 +35,12 @@ const Overview = () => {
           directly from sustainable fisheries to your doorstep.
         </p>
         <ul className="list-none text-white space-y-1 font-[Livvic]">
-          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Delivering high-quality, farm-raised freshwater fish.</li>
-          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Ensuring clean water practices for healthy growth.</li>
-          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Supporting eco-friendly and sustainable fish farming.</li>
-          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Partnering with local farmers for reliable supply chains.</li>
-          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Maintaining freshness from pond to plate.</li>
-          <li><i className="fa-regular fa-circle-check" style={{color: "#f7c35f"}}></i>Empowering communities through modern aquaculture.</li>
+          <li><CheckCircleIcon style={{color: "#f7c35f"}} fontSize="small" /> Delivering high-quality, farm-raised freshwater fish.</li>
+          <li><CheckCircleIcon style={{color: "#f7c35f"}} fontSize="small" /> Ensuring clean water practices for healthy growth.</li>
+          <li><CheckCircleIcon style={{color: "#f7c35f"}} fontSize="small" /> Supporting eco-friendly and sustainable fish farming.</li>
+          <li><CheckCircleIcon style={{color: "#f7c35f"}} fontSize="small" /> Partnering with local farmers for reliable supply chains.</li>
+          <li><CheckCircleIcon style={{color: "#f7c35f"}} fontSize="small" /> Maintaining freshness from pond to plate.</li>
+          <li><CheckCircleIcon style={{color: "#f7c35f"}} fontSize="small" /> Empowering communities through modern aquaculture.</li>
         </ul>
         <Link
           className="inline-block mt-4 px-6 py-3 bg-[#F7C35F] text-white rounded-lg shadow-md hover:bg-[#F7C35F] transition"
