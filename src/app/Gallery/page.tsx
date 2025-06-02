@@ -1,5 +1,5 @@
 import React from "react";
-import GalleryNav from "@/app/components/GalleryNav";
+import FlexButtonGroup from "@/app/components/FlexButtonGroup";
 import Project from "@/app/ProjectLocation/page";
 
 interface Photos {
@@ -14,6 +14,18 @@ interface Photos {
 const Gallery: React.FC = async () => {
   const res = await fetch("https://picsum.photos/v2/list");
   const photos: Photos[] = await res.json();
+
+  const buttonOptions = [
+    {
+      label: "Completed",
+    },
+    {
+      label: "Ongoing",
+    },
+    {
+      label: "Upcoming",
+    },
+  ];
 
   return (
     <section>
@@ -30,7 +42,7 @@ const Gallery: React.FC = async () => {
           </div>
         </div>
         <div className="w-2xl mx-auto">
-          <GalleryNav />
+          <FlexButtonGroup options={buttonOptions} />
         </div>
         {/* <nav className="w-full mb-4 text-white ">
           <ul className="flex flex-wrap items-center justify-center gap-4">

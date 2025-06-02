@@ -1,7 +1,19 @@
 import React from "react";
+import FlexButtonGroup from "@/app/components/FlexButtonGroup";
 import { motion } from "framer-motion";
 
 const Team: React.FC = () => {
+  const buttonOptions = [
+    {
+      label: "Top Management",
+    },
+    {
+      label: "Directors",
+    },
+    {
+      label: "Staffs",
+    },
+  ];
   return (
     <section>
       <div className="py-4">
@@ -16,7 +28,9 @@ const Team: React.FC = () => {
               collaborative spirit drive innovation.
             </p>
           </div>
-
+          <div className="w-2xl mx-auto">
+            <FlexButtonGroup options={buttonOptions} />
+          </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 max-md:justify-center mt-12 max-md:max-w-xs mx-auto">
             <div className="border border-gray-300 rounded-md overflow-hidden">
               <div className="w-full aspect-square bg-gray-50">
